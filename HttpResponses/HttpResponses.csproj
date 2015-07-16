@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EEE6CA8B-D14B-4A60-AF82-E0F240CDA03D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HttpResponseExceptions</RootNamespace>
+    <AssemblyName>HttpResponses</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\HttpResponses.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ambiguous.cs" />
+    <Compile Include="Moved.cs" />
+    <Compile Include="Found.cs" />
+    <Compile Include="RedirectKeepVerb.cs" />
+    <Compile Include="NotImplemented.cs" />
+    <Compile Include="BadGateway.cs" />
+    <Compile Include="GatewayTimeout.cs" />
+    <Compile Include="ExpectationFailed.cs" />
+    <Compile Include="InternalServerError.cs" />
+    <Compile Include="HttpVersionNotSupported.cs" />
+    <Compile Include="PreconditionFailed.cs" />
+    <Compile Include="RequestUriTooLong.cs" />
+    <Compile Include="RequestEntityTooLarge.cs" />
+    <Compile Include="ServiceUnavailable.cs" />
+    <Compile Include="UnsupportedMediaType.cs" />
+    <Compile Include="NotAcceptable.cs" />
+    <Compile Include="RequestTimeout.cs" />
+    <Compile Include="Conflict.cs" />
+    <Compile Include="ProxyAuthenticationRequired.cs" />
+    <Compile Include="Gone.cs" />
+    <Compile Include="LengthRequired.cs" />
+    <Compile Include="BadRequest.cs" />
+    <Compile Include="Unauthorized.cs" />
+    <Compile Include="PaymentRequired.cs" />
+    <Compile Include="Unused.cs" />
+    <Compile Include="TemporaryRedirect.cs" />
+    <Compile Include="Forbidden.cs" />
+    <Compile Include="NotFound.cs" />
+    <Compile Include="Accepted.cs" />
+    <Compile Include="NonAuthoritativeInformation.cs" />
+    <Compile Include="NoContent.cs" />
+    <Compile Include="ResetContent.cs" />
+    <Compile Include="PartialContent.cs" />
+    <Compile Include="MultipleChoices.cs" />
+    <Compile Include="MovedPermanently.cs" />
+    <Compile Include="Redirect.cs" />
+    <Compile Include="SeeOther.cs" />
+    <Compile Include="NotModified.cs" />
+    <Compile Include="UseProxy.cs" />
+    <Compile Include="MethodNotAllowed.cs" />
+    <Compile Include="RequestedRangeNotSatisfiable.cs" />
+    <Compile Include="Created.cs" />
+    <Compile Include="OK.cs" />
+    <Compile Include="SwtichingProtocols.cs" />
+    <Compile Include="Continue.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

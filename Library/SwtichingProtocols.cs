@@ -31,7 +31,6 @@
         /// HTTP status 101
         /// (the protocol version or protocol is being changed)
         /// </summary>
-        /// <typeparam name="T">The content of the HTTP response message</typeparam>
         /// <param name="request">The HTTP request message which led to this response message</param>
         /// <returns>
         /// An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage

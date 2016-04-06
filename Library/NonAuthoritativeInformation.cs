@@ -31,7 +31,6 @@
         /// HTTP status 203
         /// (the returned metainformation is from a cached copy instead of the origin server and therefore may be incorrect)
         /// </summary>
-        /// <typeparam name="T">The content of the HTTP response message</typeparam>
         /// <param name="request">The HTTP request message which led to this response message</param>
         /// <returns>
         /// An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage

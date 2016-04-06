@@ -4,6 +4,9 @@
     using System.Net.Http;
     using System.Web.Http;
 
+    /// <summary>
+    /// Less boilerplate on throwing HttpResponseExceptions.
+    /// </summary>
     public static partial class HttpResponses
     {
         /// <summary>
@@ -31,7 +34,6 @@
         /// HTTP status 202
         /// (the request has been accepted for further processing)
         /// </summary>
-        /// <typeparam name="T">The content of the HTTP response message</typeparam>
         /// <param name="request">The HTTP request message which led to this response message</param>
         /// <returns>
         /// An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage

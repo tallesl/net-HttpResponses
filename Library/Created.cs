@@ -31,7 +31,6 @@
         /// HTTP status 201
         /// (the request resulted in a new resource created before the response was sent)
         /// </summary>
-        /// <typeparam name="T">The content of the HTTP response message</typeparam>
         /// <param name="request">The HTTP request message which led to this response message</param>
         /// <returns>
         /// An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage

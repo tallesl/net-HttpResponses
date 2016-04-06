@@ -31,7 +31,6 @@
         /// HTTP status 404
         /// (the requested resource does not exist on the server)
         /// </summary>
-        /// <typeparam name="T">The content of the HTTP response message</typeparam>
         /// <param name="request">The HTTP request message which led to this response message</param>
         /// <returns>
         /// An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
@@ -71,7 +70,7 @@
         /// </returns>
         public static HttpResponseMessage NotFound<T>(this HttpRequestMessage request, string reasonPhrase, T content)
         {
-            var response = request.NotFound(HttpStatusCode.NotFound);
+            var response = request.NotFound(content);
             response.ReasonPhrase = reasonPhrase;
             return response;
         }

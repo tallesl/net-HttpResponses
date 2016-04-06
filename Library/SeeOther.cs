@@ -31,7 +31,6 @@
         /// HTTP status 303
         /// (automatically redirects the client to the URI specified in the Location header as the result of a POST)
         /// </summary>
-        /// <typeparam name="T">The content of the HTTP response message</typeparam>
         /// <param name="request">The HTTP request message which led to this response message</param>
         /// <returns>
         /// An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage

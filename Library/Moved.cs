@@ -31,7 +31,6 @@
         /// HTTP status 301
         /// (the requested information has been moved to the URI specified in the Location header)
         /// </summary>
-        /// <typeparam name="T">The content of the HTTP response message</typeparam>
         /// <param name="request">The HTTP request message which led to this response message</param>
         /// <returns>
         /// An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage
@@ -71,7 +70,7 @@
         /// </returns>
         public static HttpResponseMessage Moved<T>(this HttpRequestMessage request, string reasonPhrase, T content)
         {
-            var response = request.Moved(HttpStatusCode.Moved);
+            var response = request.Moved(content);
             response.ReasonPhrase = reasonPhrase;
             return response;
         }

@@ -31,7 +31,6 @@
         /// HTTP status 306
         /// (a proposed extension to the HTTP/1.1 specification that is not fully specified)
         /// </summary>
-        /// <typeparam name="T">The content of the HTTP response message</typeparam>
         /// <param name="request">The HTTP request message which led to this response message</param>
         /// <returns>
         /// An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage

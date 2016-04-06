@@ -31,7 +31,6 @@
         /// HTTP status 406
         /// (the client has indicated with Accept headers that it will not accept any of the available representations of the resource)
         /// </summary>
-        /// <typeparam name="T">The content of the HTTP response message</typeparam>
         /// <param name="request">The HTTP request message which led to this response message</param>
         /// <returns>
         /// An initialized System.Net.Http.HttpResponseMessage wired up to the associated System.Net.Http.HttpRequestMessage

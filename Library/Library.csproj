@@ -87,7 +87,7 @@
     <Compile Include="Status\RequestedRangeNotSatisfiable.cs" />
     <Compile Include="Status\Created.cs" />
     <Compile Include="Status\OK.cs" />
-    <Compile Include="Status\SwtichingProtocols.cs" />
+    <Compile Include="Status\SwitchingProtocols.cs" />
     <Compile Include="Status\Continue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util\DiacriticsRemover.cs" />

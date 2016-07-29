@@ -27,7 +27,7 @@
             return new HttpResponseException(
                 new HttpResponseMessage(HttpStatusCode.NotFound)
                 {
-                    ReasonPhrase = reasonPhrase
+                    ReasonPhrase = reasonPhrase.WithoutDiacritics()
                 }
             );
         }

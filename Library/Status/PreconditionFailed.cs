@@ -27,7 +27,7 @@
             return new HttpResponseException(
                 new HttpResponseMessage(HttpStatusCode.PreconditionFailed)
                 {
-                    ReasonPhrase = reasonPhrase
+                    ReasonPhrase = reasonPhrase.WithoutDiacritics()
                 }
             );
         }

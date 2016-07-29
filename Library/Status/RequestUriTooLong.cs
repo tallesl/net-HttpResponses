@@ -27,7 +27,7 @@
             return new HttpResponseException(
                 new HttpResponseMessage(HttpStatusCode.RequestUriTooLong)
                 {
-                    ReasonPhrase = reasonPhrase
+                    ReasonPhrase = reasonPhrase.WithoutDiacritics()
                 }
             );
         }

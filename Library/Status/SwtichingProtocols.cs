@@ -27,7 +27,7 @@
             return new HttpResponseException(
                 new HttpResponseMessage(HttpStatusCode.SwitchingProtocols)
                 {
-                    ReasonPhrase = reasonPhrase
+                    ReasonPhrase = reasonPhrase.WithoutDiacritics()
                 }
             );
         }
